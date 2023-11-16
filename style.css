@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header */
+header{
+ background-color: rgb(218,128,45);
+ text-align: center;
+ width:100%;
+ display:inline-block;
+ padding: 20px;
+ box-sizing: border-box;
+}
+header h1{
+    padding: 22px 0px; 
+}
+
+/* Navbar */
+ul{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+}
+
+li{
+   display: inline-block;
+}
+
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;  
+}
+
+.active{
+    background-color: #4caf50;
+}
+
+li a:hover.active {
+    background-color: #4caf50;
+}
+
+/* content */
+.content{
+    display:flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+.foto1{
+    width:150px;
+    border-radius: 15%;
+}
+
+article img{
+    min-height: 450px;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: center;
+}
+
+article p{
+    margin-top: 20px;
+    text-indent: 20px;
+}
+
+article h3{
+    padding:10px;
+}
+
+article{
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 3px;
+}
+
+aside{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding:20px;
+    background-color:chocolate;
+    margin-top: 5px;
+}
+
+.order{
+    background-color:rgb(244, 150, 28);
+    position: relative;
+    width: 100px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 550px;
+    border: 2px solid black;
+}
+
+.order:hover{
+    background-color: rgb(249, 180, 33);
+    color: aqua;
+    border: 2px solid rgb(20, 243, 146);
+    box-shadow: 0 0 30px 0 aquamarine;
+}   
+
+.order a {
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.order a:hover {
+    color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+    .order {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+ul{
+    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-block;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+aside h3, table{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+}
